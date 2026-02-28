@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Studio Landing</title>
+  <link rel="stylesheet" href="./styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar" id="top">
+  <div class="topbar__inner">
+    <div class="topbar__left">
+      <button class="iconBtn" aria-label="Menu" data-menu-btn>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <a class="topbar__brand" href="#top">EVOLVE</a>
+
+    <nav class="topbar__nav" data-nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="topbar__right">
+      <a class="btn" href="#contact">Contact us</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero hero--cinema">
+  <!-- FULL-BLEED VIDEO BACKGROUND -->
+  <div class="heroVideo heroVideo--full" aria-hidden="true">
+    <video class="heroVideo__media"
+           autoplay
+           muted
+           loop
+           playsinline
+           preload="metadata"
+           poster="./assets/hero-poster.jpg">
+      <source src="https://evolvelibrary.studio/storage/itemsVideo/174/1741442887_RKL_FameReveal_GC.mp4" type="video/mp4" />
+    </video>
+
+    <!-- overlays (expensive look) -->
+    <div class="heroVideo__overlay heroVideo__overlay--shade"></div>
+    <div class="heroVideo__overlay heroVideo__overlay--vignette"></div>
+    <div class="heroVideo__overlay heroVideo__overlay--specular"></div>
+    <div class="heroVideo__overlay heroVideo__overlay--grain"></div>
+  </div>
+
+  <!-- FOREGROUND CONTENT -->
+  <div class="container heroCinema">
+    <div class="heroCinema__panel">
+      <div class="heroCinema__badge">
+        <span class="badgeDot"></span>
+        Boutique game art studio • Available for production
+      </div>
+
+      <h1 class="h1 heroCinema__title">ART THAT POWERS PLAY</h1>
+
+      <p class="hero__sub heroCinema__sub">
+        Vibrant, eye-catching visuals for casual & stylized games —
+        built with strong attention to detail and production-ready delivery.
+      </p>
+
+      <div class="heroCta heroCta--cinema">
+        <a class="btn btn--primary btn--xl" href="#contact">Contact us</a>
+        <a class="btn btn--ghost btn--xl" href="#portfolio">View portfolio</a>
+      </div>
+
+      <div class="heroCinema__meta">
+        <div class="metaItem">
+          <span class="metaK">10+</span>
+          <span class="metaV">Years</span>
+        </div>
+        <div class="metaItem">
+          <span class="metaK">90+</span>
+          <span class="metaV">Projects</span>
+        </div>
+        <div class="metaItem">
+          <span class="metaK">24</span>
+          <span class="metaV">Markets</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="heroScroll">
+      <div class="content">
+        <span class="heroScroll__line"></span>
+        <span class="heroScroll__txt">Scroll</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- SERVICES -->
+  <section class="section section--light" id="services">
+    <div class="container">
+      <header class="sectionTitle center">
+        <h2 class="h2">MORE<br/>THAN AESTHETIC</h2>
+        <p>Game-ready visuals + stable production pipeline.</p>
+      </header>
+
+      <div class="split" style="align-items: start;">
+  <div class="split__left servicesAcc" data-services>
+
+    <div class="svc is-open" data-svc>
+      <button class="svc__head" type="button" data-svc-btn>
+        <span class="svc__title">Game art</span>
+        <span class="svc__plus" aria-hidden="true"></span>
+        <span class="svc__index">01</span>
+      </button>
+
+      <div class="svc__panel" data-svc-panel>
+        <p class="svc__lead">We provide game art services, including:</p>
+        <ul class="svc__list">
+          <li>Characters</li><li>Props</li><li>Backgrounds</li><li>UI / Icons</li>
+          <li>3D Art</li><li>Illustrations</li><li>Marketing Art</li><li>Optimization</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="svc" data-svc>
+      <button class="svc__head" type="button" data-svc-btn>
+        <span class="svc__title">Animation</span>
+        <span class="svc__plus" aria-hidden="true"></span>
+        <span class="svc__index">02</span>
+      </button>
+
+      <div class="svc__panel" data-svc-panel>
+        <p class="svc__lead">We provide animation services, including:</p>
+        <ul class="svc__list">
+          <li>Spine / 2D rigs</li><li>FX</li><li>Idle / loop sets</li><li>In-engine setup</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="svc" data-svc>
+      <button class="svc__head" type="button" data-svc-btn>
+        <span class="svc__title">UI / UX</span>
+        <span class="svc__plus" aria-hidden="true"></span>
+        <span class="svc__index">03</span>
+      </button>
+
+      <div class="svc__panel" data-svc-panel>
+        <p class="svc__lead">We provide UI/UX services, including:</p>
+        <ul class="svc__list">
+          <li>Game HUD</li><li>Menus</li><li>Icon packs</li><li>Style guides</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="split__right">
+    <div class="showcase showcase--tall">
+      <img src="https://harvel.studio/wp-content/uploads/9-1.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+      <div class="trustBlock">
+  <p class="trustBlock__text">
+    We strive to be your most trusted partner. 
+    And every day, our numbers and client stories bring us closer.
+  </p>
+</div>
+
+      <div class="metrics">
+        <div class="metrics__copy">
+          <p>We strive to be your most trusted partner. Numbers and client stories bring us closer.</p>
+          <div class="metrics__big">100k</div>
+        </div>
+        <div class="metrics__stats">
+          <div class="stat"><b>10+</b><span>Years</span></div>
+          <div class="stat"><b>90+</b><span>Projects</span></div>
+          <div class="stat"><b>24</b><span>Markets</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO (expanded) -->
+  <section class="section section--dark" id="portfolio">
+    <div class="container">
+      <header class="sectionTitle">
+        <h2 class="h2 h2--white">PORTFOLIO</h2>
+        <p class="muted">A selection of shipped visuals and ongoing production.</p>
+      </header>
+
+      <div class="filters" data-filters>
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="slots">Slots</button>
+        <button class="chip" data-filter="casual">Casual</button>
+        <button class="chip" data-filter="characters">Characters</button>
+        <button class="chip" data-filter="ui">UI</button>
+        <button class="chip" data-filter="bg">Backgrounds</button>
+      </div>
+
+  <div class="portfolioMosaic" data-grid>
+
+  <!-- Row rhythm start -->
+  <a class="work" data-tag="casual" href="#">
+    <img src="https://harvel.studio/wp-content/uploads/GH_Harvel_Site_Preview.jpg" alt="">
+  </a>
+
+  <a class="work" data-tag="characters" href="#">
+    <img src="https://harvel.studio/wp-content/uploads/HOH_Harvel_Site_Preview.jpg" alt="">
+  </a>
+
+  <a class="work" data-tag="ui" href="#">
+    <img src="https://harvel.studio/wp-content/uploads/9-1.jpg" alt="">
+  </a>
+
+  <!-- Mid density -->
+  <a class="work" data-tag="slots" href="#">
+    <img src="https://harvel.studio/wp-content/uploads/9-1.jpg" alt="">
+  </a>
+
+  <a class="work" data-tag="casual" href="#">
+    <img src="https://harvel.studio/wp-content/uploads/9-1.jpg" alt="">
+  </a>
+
+  <a class="work" data-tag="characters" href="#">
+    <img src="https://harvel.studio/wp-content/uploads/9-1.jpg" alt="">
+  </a>
+
+</div>
+
+      <div class="ctaRow">
+        <a class="btn btn--primary" href="#contact">Request full portfolio</a>
+        <span class="muted">We can share a tailored deck after NDA if needed.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section--dark2" id="process">
+    <div class="container">
+      <header class="sectionTitle center">
+        <h2 class="h2 h2--white">ALIGNED<br/>FOR IMPACT</h2>
+        <p class="muted">Transparent workflow from kickoff to final delivery.</p>
+      </header>
+
+      <div class="processBook" data-process>
+        <div class="processBook__stage" aria-live="polite">
+          <div class="processBook__slides">
+            <img class="slide slide--active" id="slideA" src="https://harvel.studio/wp-content/uploads/9-1.jpg" alt="">
+            <img class="slide" id="slideB" src="https://harvel.studio/wp-content/uploads/9-1.jpg" alt="">
+          </div>
+
+          <div class="processBook__fallback" aria-hidden="true">
+            <span id="pbTitle">PROCESS BOOK</span>
+            <small id="pbSub">Click steps to preview each stage</small>
+          </div>
+
+          <div class="processBook__caption">
+            <div class="capKicker" id="capKicker">01 — DISCOVERY</div>
+            <div class="capTitle" id="capTitle">References & scope alignment</div>
+            <div class="capText" id="capText">We collect references, confirm constraints, and define style targets.</div>
+          </div>
+
+          <div class="processBook__fx" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="steps" id="processSteps" role="tablist" aria-label="Process steps">
+        <button class="step is-active" type="button" role="tab" aria-selected="true"
+                data-step="0" data-kicker="01 — DISCOVERY"
+                data-title="References & scope alignment"
+                data-text="We collect references, confirm constraints, and define style targets.">
+          <b>01</b><span>Discovery</span><p>References, scope, style targets.</p>
+        </button>
+
+        <button class="step" type="button" role="tab" aria-selected="false"
+                data-step="1" data-kicker="02 — STYLEFRAMES"
+                data-title="Key frames & approvals"
+                data-text="We design key frames, iterate fast, and lock the look before production.">
+          <b>02</b><span>Styleframes</span><p>Key frames & approvals.</p>
+        </button>
+
+        <button class="step" type="button" role="tab" aria-selected="false"
+                data-step="2" data-kicker="03 — PRODUCTION"
+                data-title="Sprints, QA, revisions"
+                data-text="We produce in sprints with QA gates and structured revision rounds.">
+          <b>03</b><span>Production</span><p>Sprints, QA, revisions.</p>
+        </button>
+
+        <button class="step" type="button" role="tab" aria-selected="false"
+                data-step="3" data-kicker="04 — DELIVERY"
+                data-title="Sources + exports, naming"
+                data-text="We deliver layered sources and engine-ready exports with clean naming.">
+          <b>04</b><span>Delivery</span><p>Sources + exports, naming.</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY / WHAT YOU GET -->
+  <section class="section section--light output" id="output">
+  <div class="container">
+    <header class="sectionTitle">
+      <h2 class="h2">PRODUCTION<br/>READY OUTPUT</h2>
+      <p>Not just pretty images — we deliver files you can ship.</p>
+    </header>
+
+    <div class="twoCol outputGrid">
+      <div class="box outCard">
+        <h3>What you get</h3>
+        <ul>
+          <li>Layered sources (PSD/AI/Spine)</li>
+          <li>Export packs (PNG/WebP/Atlas)</li>
+          <li>Naming & folder structure</li>
+          <li>Style guide / art bible</li>
+          <li>Engine-ready constraints</li>
+        </ul>
+      </div>
+
+      <div class="box outCard">
+        <h3>Revision policy</h3>
+        <ul>
+          <li>Clear review milestones</li>
+          <li>1–2 revision rounds per stage</li>
+          <li>Fast feedback loop in chat</li>
+          <li>Weekly progress report</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- REVIEWS -->
+  <section class="section section--light reviews" id="reviews">
+  <div class="container">
+    <header class="sectionTitle reviewsTitle">
+      <h2 class="h2">CLIENT<br/>REVIEWS</h2>
+
+      <div class="reviewsControls" aria-hidden="false">
+        <button class="rBtn" type="button" data-r-prev aria-label="Previous review">‹</button>
+        <button class="rBtn" type="button" data-r-next aria-label="Next review">›</button>
+      </div>
+    </header>
+
+    <div class="reviewsRail" data-reviews>
+      <div class="reviewsTrack" id="reviewsTrack">
+        <!-- 6 cards -->
+        <article class="reviewCard">
+          <p>“Fast, predictable delivery. Clean files, consistent naming, and zero surprises. Exactly what we needed for production.”</p>
+          <footer><b>Alex M.</b><span>Mobile Games Studio</span></footer>
+        </article>
+
+        <article class="reviewCard">
+          <p>“The style consistency is insane. We could drop assets straight into the pipeline with minimal adjustments.”</p>
+          <footer><b>Nina K.</b><span>Game Publisher</span></footer>
+        </article>
+
+        <article class="reviewCard">
+          <p>“Quick iterations, clear feedback loop, and a proper art bible. Communication was sharp and structured.”</p>
+          <footer><b>Ryan T.</b><span>Creative Director</span></footer>
+        </article>
+
+        <article class="reviewCard">
+          <p>“Best part: production-ready exports. The team handled constraints and delivered exactly per engine requirements.”</p>
+          <footer><b>Ola S.</b><span>Unity Team Lead</span></footer>
+        </article>
+
+        <article class="reviewCard">
+          <p>“They didn’t just ‘make art’ — they shipped a system. Great structure, great QA, great pace.”</p>
+          <footer><b>Vish P.</b><span>Product Owner</span></footer>
+        </article>
+
+        <article class="reviewCard">
+          <p>“Reliable partnership. The pipeline was transparent, revisions were controlled, and delivery was always on schedule.”</p>
+          <footer><b>Arseniy D.</b><span>Art Producer</span></footer>
+        </article>
+      </div>
+    </div>
+
+    <div class="reviewsDots" id="reviewsDots" aria-label="Reviews pagination"></div>
+  </div>
+</section>
+
+  <!-- FAQ -->
+  <section class="section section--dark" id="faq">
+    <div class="container">
+      <header class="sectionTitle">
+        <h2 class="h2 h2--white">FAQ</h2>
+        <p class="muted">Quick answers before you reach out.</p>
+      </header>
+
+      <div class="faq" data-faq>
+        <details open>
+          <summary>Do you work with NDA?</summary>
+          <div class="faq__a">Yes. We can sign NDA before sharing full portfolio or files.</div>
+        </details>
+        <details>
+          <summary>What is your typical timeline?</summary>
+          <div class="faq__a">Depends on scope. We usually deliver first styleframes within 3–7 days.</div>
+        </details>
+        <details>
+          <summary>What formats do you deliver?</summary>
+          <div class="faq__a">PSD/AI/Spine sources + exports (PNG/WebP/Atlases) and engine-ready packs.</div>
+        </details>
+        <details>
+          <summary>Can you scale team size?</summary>
+          <div class="faq__a">Yes. We can ramp production up/down per sprint.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING / ENGAGEMENT -->
+  <section class="section section--light">
+    <div class="container">
+      <header class="sectionTitle center">
+        <h2 class="h2">ENGAGEMENT<br/>MODELS</h2>
+        <p>Choose what fits your production cycle.</p>
+      </header>
+
+      <div class="pricing">
+        <article class="priceCard">
+          <h3>Starter</h3>
+          <p class="muted">Small batch / one-shot tasks</p>
+          <ul><li>UI packs</li><li>Single scene</li><li>Quick turnaround</li></ul>
+          <a class="btn btn--primary" href="#contact">Get quote</a>
+        </article>
+        <article class="priceCard priceCard--featured">
+          <h3>Production</h3>
+          <p class="muted">Monthly collaboration</p>
+          <ul><li>Weekly sprints</li><li>Stable pipeline</li><li>Dedicated PM</li></ul>
+          <a class="btn btn--primary" href="#contact">Get quote</a>
+        </article>
+        <article class="priceCard">
+          <h3>Dedicated Team</h3>
+          <p class="muted">Full art department</p>
+          <ul><li>Multiple artists</li><li>Art direction</li><li>QA & delivery</li></ul>
+          <a class="btn btn--primary" href="#contact">Get quote</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+ <!-- FINAL CTA (B) -->
+<section class="section section--dark2 ctaB">
+  <div class="container ctaB__inner">
+    <div class="ctaB__copy">
+      <h2 class="h2 h2--white">READY TO BUILD<br/>YOUR NEXT GAME?</h2>
+      <p class="muted">We’ll propose a production plan, style direction and milestones.</p>
+      <div class="ctaB__row">
+        <a class="btn btn--primary btn--xl" href="#contact">Contact us</a>
+        <span class="muted">Reply within 24h</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT (B) -->
+<section class="section contactB section--dark3" id="contact">
+  <div class="container contactB__inner">
+    <header class="contactB__head">
+      <div class="contactB__k"><i></i><span>Brief</span></div>
+      <h2 class="h2 h2--white">Send us your scope</h2>
+      <p class="muted">A few lines is enough. We’ll ask clarifying questions if needed.</p>
+    </header>
+
+    <form class="formB" id="contactForm">
+      <div class="formB__grid">
+        <label class="fB"><span>Name*</span><input name="name" required></label>
+        <label class="fB"><span>E-mail*</span><input name="email" type="email" required></label>
+        <label class="fB fB--full"><span>Message*</span><textarea name="message" rows="8" required></textarea></label>
+        <label class="fB"><span>Budget</span><input name="budget"></label>
+        <label class="fB"><span>Deadline</span><input name="deadline"></label>
+      </div>
+      <div class="formB__actions">
+        <button class="btn btn--primary btn--xl-white" type="submit">Send</button>
+        <div class="formB__note muted">NDA • Engine-ready delivery • Weekly updates</div>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© Studio, 2026</span>
+    <div class="footer__links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
